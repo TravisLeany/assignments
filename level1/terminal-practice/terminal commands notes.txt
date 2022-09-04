@@ -1,0 +1,38 @@
+pwd (print working directory)
+ls (list directory)
+cd (change directory)
+	cd "nameOfFolder" (tab to autocomplete, is case sensitive, easiest to lower case first letters)
+. is current directory
+.. is parent directory of current directory
+	multiple levels can be accomplished with /s, as with going down with "../../.."
+
+up             brings up previous commands used
+
+~ is home directory, can be used to cd ~
+
+clear          will move everything up
+
+operations all via the command line. Here are some examples of a few:
+
+- **`pwd`** tells you what directory you are currently in. print working directory
+	pwd
+
+- **`ls`** lists the files and folders in the current directory. lists files and folders in current directory
+	ls
+
+- **`cd`** changes what directory you're in. You can use **/** to get to the root directory quickly. change directory
+	cd <foldername/foldername/foldername...>
+
+- **`mkdir`** makes a new folder in the current directory. (make directory)
+	mkdir <nameofolder>
+
+- **`touch`** creates a new file with the name and extension given.
+	touch <name of file and extension e.g. app.js>
+
+- **`rm`** deletes a file or folder. Use it with -r to force it to delete a folder even if there are still objects in the folder you are trying to delete.
+	rm <filename> or rm -r <directoryname>
+
+- **`mv`** either *moves* or *renames* a file or folder, depending on how you use it
+	
+- To *rename* a file, you would do `mv <old-file-name> <new-file-name>`, without the `<` and `>`. For example:
+	

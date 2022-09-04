@@ -1,0 +1,2 @@
+git init  --creates a .git file in the parent folder
+git status  --shows files and their commit statuses

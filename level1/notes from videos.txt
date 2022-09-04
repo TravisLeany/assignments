@@ -1,0 +1,103 @@
+Sometimes you may want to select a number of elements, like all the list items in a list or all 
+elements with a specific class name. getElementById works great for selecting a single instance 
+(since ids should be unique), but there are other selectors you can use to get lists of elements. 
+
+The most common are:
+* getElementsByClassName
+* getElementsByTagName
+
+Since there could potentially be multiple elements in the document with the same class name or 
+the same tag name (like `p` or `div`), these element selectors will always return an array of 
+elements. (Strictly speaking it isn't really an array, but is an "array-like object" of all the 
+elements that matched the selector)
+
+Important: even if you only have one element on the page with a given class name, the 
+`getElementsByClassName()` method will still return this array of elements - it will 
+just be an array with a single item in it.
+
+# Quiz:
+
+1. What are some of the differences between getElementById and getElementsByClassName?
+* id - returns a single element/object from the document. class name (tag name) returns an 
+array-like object.
+* id - needs an id to find, class name - needs a class to find
+        document.getElementsByTagName("div")
+
+2. What will `.getElementsByClassName` return if there are no elements with the matching 
+class in the document?
+Returns an empty array
+
+
+3. What will `.getElementById` return if there is no element with the matching id in the 
+document?
+`null`
+
+hash # calls class, period . calls id for css and querySelector
+
+practice:
+getelementbyid, getelementsbyclassname, getelementsbytagname, and queryselector andd
+queryselectorall
+
+MDN Docs on input element:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+MDN Docs on addEventListener:
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+Programmer's best friend:
+https://www.google.com/
+
+
+user can type in input box, after clicking button logs input value to console, extra 
+challenge also fill a paragraph or header with same value that's in the input box
+
+# Selecting element(s)
+
+`document.getElementById(<id string>)` - Returns a single element by its ID. If you (erroneously) have two 
+elements with the same id, it will pick the first one it finds
+
+`document.querySelector(<CSS selector string>)` - Returns a single element based on the CSS selector provided 
+as a string. If multiple items match the CSS selector, this will only return the first one that matches.
+
+`document.getElementsByClassName(<class name string>)` - Returns an array-like HTML collection of all elements 
+that have the provided class name. If 0 elements match, returns an empty HTML collection (like an empty array). 
+If 1 element matches, returns an HTML collection with a single item in it (like an array with only 1 item).
+
+`document.getElementsByTagName(<tag name string>)` - Returns a collection of elements (array-like) with the 
+provided tag name (e.g. "h1", "div", "li", etc.)
+
+`document.querySelectorAll(<CSS selector string>)` - Returns a collection of elements (array-like) that match the 
+CSS selector.
+
+-------------------
+
+# Modifying elements
+
+(For descriptions below, imagine we've selected and saved an element to a variable called `element`)
+
+`element.textContent` - the plain text inside the element. Can be set equal to something new with the assignment 
+operator (`=`)
+
+`element.innerHTML` - the string version of the HTML elements that are children of the selected element. If you 
+add new HTML tags to the `innerHTML` of an element, they'll be turned into new elements on the page.
+
+`element.style` - an object whose properties match all available CSS properties of the element, but camelCased 
+instead of separated with dashes. (E.g. `backgroundColor` instead of `background-color`)
+
+-------------------
+
+*Pro tip:* many attributes in the HTML of an element are accessible with JavaScript. E.g., an image element with 
+a `src` attribute (<img id="logo" src="someImage.jpg" />) can be accessed or modified from the selected element 
+in JS:
+
+```
+var myImage = document.getElementById("logo")
+myImage.src = "newImage.jpg"
+```
+
+Same goes for `href`, `id`, etc.
+
+serious to fun
+don't to definitely
+the police to amazing
+a simple farmer to amazing

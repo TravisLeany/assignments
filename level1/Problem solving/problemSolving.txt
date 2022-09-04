@@ -1,0 +1,44 @@
+You will be quizzed on these 4 steps. Understand the problem, make a plan, 
+carry out the plan, and look back. 
+
+### Polya's Process
+
+In order to effectively solve this problem we need to use a method for 
+solving problems developed for mathematician George Polya.
+
+1. Understand the problem. Do you understand what the problem is asking 
+of us? If not, either re-read and try to explain it to yourself in your 
+own words or ask for further clarification. Determine the data and the 
+unknowns. Once we've truly understood the problem we can identify what 
+data we have and what we don't have. Is the data we have sufficient to 
+solve the condition of the problem? If not, what data would we need to 
+do that?
+2. Make a plan. Once we've understood the problem and reviewed the data 
+and unknowns, we are ready to make a plan of action to solve this problem. 
+Along the way, we'll ask ourselves some other questions, like, have we 
+seen a problem similar to this one that we could use the same method to 
+solve it? Is there an established way of dealing with this type of 
+problem that you've learned? etc. The best way to make a plan is to break 
+the problem down into smaller pieces or steps that we'll solve one by one. 
+This is usually done by beginning to write pseudo-code.
+3. Carry out the plan. The execution of the plan will involve attempting 
+to solve each little piece or step while checking to ensure that the 
+outcome is what we expected. Code is easier to debug if it's done in small 
+steps rather than attempting to solve the problem to completion and then 
+checking it.
+4. Looking back. Can we check and prove the the result is correct? Now that 
+we have a completed answer is there any way we can optimize it? Is this 
+solution going to handle all of the potential use cases? Can our solution 
+or parts of it be reused for another similar task? Or can code we've already 
+written replace pieces of our solution?
+
+Often times when we're executing a plan we may realize that there is step 
+we hadn't planned out yet, especially if the plan is large or the task is 
+more complicated with more steps. Feel free to stop at anytime and figure 
+out how to do something. In this case, we need to figure out how to get 
+the number of voters in each group that have actually voted and then the 
+total number in each group and calculate the percentage with it.
+
+In the end, big problems are merely made up of smaller, more manageable 
+problems, most of which you can either solve or learn how to solve fairly 
+quickly.
