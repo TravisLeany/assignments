@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\moms-shopping-list-start"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "moms-shopping-list-start"
+	}
+}

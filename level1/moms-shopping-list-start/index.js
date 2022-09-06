@@ -2,6 +2,8 @@
 
 document.createElement("title")
 
+
+
 const newItemText = document.querySelector('#title')
 const addNewItemConst = document.querySelector('#addNewItem')
 const ulGroceries = document.querySelector('#list')
@@ -23,6 +25,8 @@ addNewItemConst.addEventListener("click", function(e){
     newEditButton.setAttribute('class', "hNewEditButton")
     newEditButton.textContent = "edit"
     newEditButton.style.listStyleType
+    const blankForm = document.querySelector('#title')
+    blankForm.textContent=""
 
     const newXButton = document.createElement('button')
     // newXButton.classList.add("input")
