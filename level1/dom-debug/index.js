@@ -1,20 +1,26 @@
 const colors = ["red", "blue", "green"]
 
+
+
+document.getElementById('input').placeholder = 'add an item here...'
+
 document.getElementById("add").addEventListener("click", function(e){
     const subItem = createSubItem(e)
     document.getElementById("list").appendChild(subItem)
-})
+    document.getElementById('input').value = ""
+    })
+
 
 function createDropDown(){
     const dropDown = document.createElement("select")
     for (let i = 0; i < colors.length; i++){
-        const option = createElement("option") 
+        const option = document.createElement("option") 
         option.innerHTML = colors[i]
         option.value = colors[i]
         dropDown.append(option)
     }
-    dropDown.addEventListener("onchange", function(e){
-        e.target.parent.backgroundColor = e.target.value
+    dropDown.addEventListener("change", function(e){
+        e.target.parentNode.style.backgroundColor = e.target.value
     })
     return dropDown
 }

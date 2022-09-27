@@ -1,0 +1,117 @@
+body {
+    width: fit-content;
+    background-size: contain;
+    background-color: #F2F2F2;
+}
+
+nav {
+    text-align: center;
+    background-color: #A69898;
+    background-size: contain;
+}
+
+nav > ul > li  
+
+li {
+    display: inline;
+    padding: 10px;
+    background-color: #D9D9D9;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32pt;
+    color: #0D0D0D;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000;
+    font-weight: bolder;
+    background-color: #734230;
+    /* background-image: url("http://airconditioningarizona.com/wp-content/uploads/2019/12/Natural-Oak-.jpg"); */
+}
+
+.paragraph1 {
+    font-size: 17.5pt;
+    text-align: center;
+    font-weight: bolder;
+    display: block;
+    width: 63%;
+    margin: auto;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.paragraph2 {
+    color: rgb(78, 0, 0);
+    font-weight: bolder;
+    font-size: 16pt;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.paragraph3 {
+    color: rgb(172, 0, 0);
+    font-weight: bolder;
+    font-size: 14.5pt;
+    text-align: center;
+    display: block;
+    width: 40%;
+    padding: 5px;
+    margin: auto;
+}
+
+.paragraph4 {
+    color: red;
+    font-weight: bolder;
+    font-size: 13pt;
+    text-align: center;
+    display: block;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+}
+
+.battlecry {
+    color: red;
+    font-weight: bolder;
+    font-size: 40pt;
+    text-align: center;
+    display: block;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+}
+
+.clickbait {
+    text-align: center;
+    display: grid;
+    padding: 3px;
+}
+
+.clickbait {
+    animation: blink normal 3s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+    
+}
+
+#moduleZeroButton {
+    width: 70px;
+}

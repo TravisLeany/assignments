@@ -1,13 +1,13 @@
 //#1
-// var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"]
-// let computerCount = 0
-// for ( var i = 0; i < officeItems.length; i++ ){
-//     if (officeItems[i] === 'computer'){
-//         computerCount += 1;
-//         // console.log(computerCount)
-//     }
-// }
-// console.log("our variable string contains "+computerCount+" computers in that mug.")
+var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"]
+let computerCount = 0
+for ( var i = 0; i < officeItems.length; i++ ){
+    if (officeItems[i] === 'computer'){
+        computerCount += 1;
+        // console.log(computerCount)
+    }
+}
+console.log("our variable string contains "+computerCount+" computers in that mug.")
 
 //#2
 //Loop through the following array and log to the console "old enough" 
@@ -36,20 +36,32 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
     }
   ]
 
-  pronoun = ("")
+  //pronoun = null;
   
-  if(peopleWhoWantToSeeMadMaxFuryRoad.gender === 'male'){
-    pronoun = "he"
-  } else {
-    pronoun = "she"
-  }
-  
-  for(var i =0; i<peopleWhoWantToSeeMadMaxFuryRoad.length;i++){
-    var gender = ""
 
+  for(var i =0; i<peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+    var pronoun;
+    var vName;
     if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name+' is old enough to see Mad Max. '+ pronoun
-        
+        vName = peopleWhoWantToSeeMadMaxFuryRoad[i].name
+        // console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name+' is old enough to see Mad Max.')
+        if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender === 'male'){
+            pronoun = "he"
+        } else {
+            pronoun = "she"
+        }
+        // ` <- backtick (under the tilde) what's inside the console log is the template literal both sides "${putAVariableHereFromJS}"
+        console.log(`${vName} is old enough, ${pronoun} is super stoked`)
+    } else {
+        vName = peopleWhoWantToSeeMadMaxFuryRoad[i].name
+        if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender === 'male'){
+            pronoun = "he"
+        } else {
+            pronoun = "she"
+        }
+        console.log(`${vName} is not old enough, ${pronoun} is mega sad!!`)
+    }}
+
         // for(var i=0; i<peopleWhoWantToSeeMadMaxFuryRoad.length;i++){
         //     if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender === male){
         //     console.log('he')
@@ -57,10 +69,8 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
         //     console.log('she')
         // }}
         
-        
-        +' is super stoked!!')
     
-    } else {
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name +' is not old enough :/. '+ peopleWhoWantToSeeMadMaxFuryRoad[i].gender +' is super bummed')
-    }
-  }  
+//     } else {
+//         console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name +' is not old enough :/. '+ peopleWhoWantToSeeMadMaxFuryRoad[i].gender +' is super bummed')
+//     }
+//   }  
